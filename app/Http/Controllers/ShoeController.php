@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\View\View;
 use Webpatser\Uuid\Uuid;
 use Illuminate\Support\Carbon;
+use App\Shoe;
 
 class ShoeController extends Controller
 {
@@ -20,9 +21,14 @@ class ShoeController extends Controller
      */
     public function index()
     {
-        $shoes = DB::table('shoes')->get();
-        return view('shoes.index')
-            ->with('shoes', $shoes);
+       // $shoes = DB::table('shoes')->get();
+       // return view('shoes.index')
+          //  ->with('shoes', $shoes);
+
+        $shoes = Shoe::latest()->paginate(5);
+
+        return view('shoes.index',compact('shoes'))
+            ->with('i', (request()->input('page', 1) - 1) * 5);
     }
 
     /**
@@ -34,7 +40,7 @@ class ShoeController extends Controller
     {
         $size = DB::table('shoe_size')->get()->pluck('shoe_size',	'shoe_size_ID');
         $brand = DB::table('shoe_brand')->get()->pluck('shoe_brand',	'shoe_brand_ID');
-        return view('shoes.createShoe')
+        return view('shoes.create')
             ->with('brand', $brand)
             ->with('size', $size);
     }
@@ -55,10 +61,11 @@ class ShoeController extends Controller
             'shoe_size_FK' => $request->input('shoe_size'),
             'shoe_description' => $request->input('shoe_description'),
             'shoe_amount' => $request->input('shoe_amount'),
-            'shoe_created_at' => Carbon::now()->format( 'Y-m-d H:i:s' ),
-            'shoe_updated_at' => Carbon::now()->format( 'Y-m-d H:i:s' ),
+            'created_at' => Carbon::now()->format( 'Y-m-d H:i:s' ),
+            'updated_at' => Carbon::now()->format( 'Y-m-d H:i:s' ),
         ]);
-        return view('shoes.index');
+        return redirect()->route('shoes.index')
+            ->with('success','Product created successfully.');
     }
 
     /**
@@ -98,11 +105,15 @@ class ShoeController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param \App\Shoe $shoe
      * @return \Illuminate\Http\Response
+     * @throws Exception
      */
-    public function destroy($id)
+    public function destroy(Shoe $shoe)
     {
-        //
+        $shoe->delete();
+
+        return redirect()->route('shoes.index')
+            ->with('success','Product removed successfully.');
     }
 }

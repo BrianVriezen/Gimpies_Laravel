@@ -4,10 +4,10 @@
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2>Check all Blogs</h2>
+                <h2>Schoenen</h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-success" href="{{ route('shoe.create') }}"> Create new blogs</a>
+                <a class="btn btn-success" href="{{ route('shoes.create') }}"> Create new blogs</a>
             </div>
         </div>
     </div>
@@ -30,14 +30,14 @@
             <tr>
                 <td>{{ $shoe->shoes_ID }}</td>
                 <td>{{ $shoe->shoe_name }}</td>
-                <td>{{ $shoe->shoe_description }}</td>
+                <td>{{ $shoe->shoe_brand }}</td>
                 <td>{{ $shoe->shoe_description }}</td>
                 <td>
-                    <form action="{{ route('shoe.destroy',$shoe->shoes_ID) }}" method="POST">
+                    <form action="{{ route('shoes.destroy',$shoe->shoes_ID) }}" method="POST">
 
-                        <a class="btn btn-info" href="{{ route('shoe.show',$shoe->shoes_ID) }}">Show</a>
+                        <a class="btn btn-info" href="{{ route('shoes.show',$shoe->shoes_ID) }}">Show</a>
 
-                        <a class="btn btn-primary" href="{{ route('shoe.edit',$shoe->shoes_ID) }}">Edit</a>
+                        <a class="btn btn-primary" href="{{ route('shoes.edit',$shoe->shoes_ID) }}">Edit</a>
 
                         @csrf
                         @method('DELETE')
@@ -49,6 +49,7 @@
         @endforeach
     </table>
 
+    {!! $shoes->links() !!}
+
 @endsection
 
-https://www.youtube.com/watch?v=jMG4UgGB7W8

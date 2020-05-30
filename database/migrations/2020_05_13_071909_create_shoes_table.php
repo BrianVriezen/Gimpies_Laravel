@@ -24,8 +24,8 @@ class CreateShoesTable extends Migration
             $table->foreign('shoe_size_FK')->references('shoe_size_ID')->on('shoe_size');
             $table->string('shoe_description');
             $table->string('shoe_amount');
-            $table->dateTime('shoe_created_at');
-            $table->dateTime('shoe_updated_at');
+            $table->dateTime('created_at');
+            $table->dateTime('updated_at');
         });
     }
 
