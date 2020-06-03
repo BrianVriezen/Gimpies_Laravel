@@ -12,6 +12,6 @@ class Shoe extends Model
 
     public function brand()
     {
-        return $this->belongsTo(Brand::class, 'shoe_brand_FK', 'shoe_brand_ID');
+        return $this->belongsTo(Brand::class, 'shoe_brand_FK', 'id');
     }
 }

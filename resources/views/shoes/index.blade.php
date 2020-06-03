@@ -25,10 +25,10 @@
             <th>Description</th>
             <th width="250px">Action</th>
         </tr>
-        @foreach ($brand->shoes as $shoe)
+        @foreach ($brands->shoes as $shoe)
             <tr>
                 <td>{{ $shoe->shoe_name }}</td>
-                <td>{{ $brand->brand_name }}</td>
+                <td>{{ $brands->brand_name }}</td>
                 <td>{{ $shoe->shoe_description }}</td>
                 <td>
                     <form action="{{ route('shoes.destroy',$shoe->id) }}" method="POST">

@@ -7,10 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Brand extends Model
 {
-
-
-    public function shoe()
+    public function shoes()
     {
-        return $this->hasOne(Shoe::class, 'shoe_brand_FK','shoe_brand_ID');
+        return $this->hasMany(Shoe::class, 'shoe_brand_FK','id');
     }
 }

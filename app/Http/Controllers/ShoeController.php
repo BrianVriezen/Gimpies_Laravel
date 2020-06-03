@@ -26,8 +26,8 @@ class ShoeController extends Controller
         $shoes =  Shoe::all();
 
         return view('shoes.index')
-            ->with('shoe', $shoes)
-            ->with('brand', $brand);
+            ->with('shoes', $shoes)
+            ->with('brands', $brand);
     }
 
     /**
@@ -37,8 +37,8 @@ class ShoeController extends Controller
      */
     public function create()
     {
-        $size = DB::table('shoe_size')->get()->pluck('shoe_size',	'id');
-        $brand = DB::table('shoe_brand')->get()->pluck('brand_name',	'id');
+        $size = DB::table('sizes')->get()->pluck('shoe_size',	'id');
+        $brand = DB::table('brands')->get()->pluck('brand_name',	'id');
         return view('shoes.create')
             ->with('brand', $brand)
             ->with('size', $size);
