@@ -20,24 +20,22 @@
 
     <table class="table table-bordered">
         <tr>
-            <th>No</th>
-            <th>Title</th>
-            <th>Description</th>
+            <th>Naam</th>
+            <th>Merk</th>
             <th>Description</th>
             <th width="250px">Action</th>
         </tr>
-        @foreach ($shoes as $shoe)
+        @foreach ($brand->shoes as $shoe)
             <tr>
-                <td>{{ $shoe->shoes_ID }}</td>
                 <td>{{ $shoe->shoe_name }}</td>
-                <td>{{ $shoe->shoe_brand }}</td>
+                <td>{{ $brand->brand_name }}</td>
                 <td>{{ $shoe->shoe_description }}</td>
                 <td>
-                    <form action="{{ route('shoes.destroy',$shoe->shoes_ID) }}" method="POST">
+                    <form action="{{ route('shoes.destroy',$shoe->id) }}" method="POST">
 
-                        <a class="btn btn-info" href="{{ route('shoes.show',$shoe->shoes_ID) }}">Show</a>
+                        <a class="btn btn-info" href="{{ route('shoes.show',$shoe->id) }}">Show</a>
 
-                        <a class="btn btn-primary" href="{{ route('shoes.edit',$shoe->shoes_ID) }}">Edit</a>
+                        <a class="btn btn-primary" href="{{ route('shoes.edit',$shoe->id) }}">Edit</a>
 
                         @csrf
                         @method('DELETE')
@@ -48,8 +46,5 @@
             </tr>
         @endforeach
     </table>
-
-    {!! $shoes->links() !!}
-
 @endsection
 

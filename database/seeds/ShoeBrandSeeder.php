@@ -12,31 +12,25 @@ class ShoeBrandSeeder extends Seeder
     public function run()
     {
         DB::statement('SET FOREIGN_KEY_CHECKS=0');
-        DB::table( 'shoe_brand' )->truncate();
-        DB::table( 'shoe_brand' )->insert( [
+        DB::table( 'brands' )->truncate();
+        DB::table( 'brands' )->insert( [
             [
-                "shoe_brand_ID"          => Uuid::generate(),
-                "shoe_brand"        => "Kenneth Cole"
+                "brand_name"        => "Kenneth Cole"
             ],
             [
-                "shoe_brand_ID"          => Uuid::generate(),
-                "shoe_brand"        => "Nike"
+                "brand_name"        => "Nike"
             ],
             [
-                "shoe_brand_ID"          => Uuid::generate(),
-                "shoe_brand"        => "Adidas"
+                "brand_name"        => "Adidas"
             ],
             [
-                "shoe_brand_ID"          => Uuid::generate(),
-                "shoe_brand"        => "Reebok"
+                "brand_name"        => "Reebok"
             ],
             [
-                "shoe_brand_ID"          => Uuid::generate(),
-                "shoe_brand"        => "FILA"
+                "brand_name"        => "FILA"
             ],
             [
-                "shoe_brand_ID"          => Uuid::generate(),
-                "shoe_brand"        => "Timberland"
+                "brand_name"        => "Timberland"
             ]
         ] );
     }

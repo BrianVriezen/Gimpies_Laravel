@@ -14,12 +14,12 @@ class CreateCartTable extends Migration
     public function up()
     {
         Schema::create('cart', function (Blueprint $table) {
-            $table->uuid('cart_ID');
-            $table->primary('cart_ID');
-            $table->uuid('shoes_ID_FK')->nullable();
-            $table->foreign('shoes_ID_FK')->references('shoes_ID')->on('shoes');
-            $table->uuid('user_ID_FK')->nullable();
-            $table->foreign('user_ID_FK')->references('user_id')->on('users');
+            $table->id();
+            $table->foreignId('shoes_ID_FK');
+            $table->foreign('shoes_ID_FK')->references('id')->on('shoes');
+
+            $table->foreignId('user_ID_FK');
+            $table->foreign('user_ID_FK')->references('id')->on('users');
             $table->dateTime('created_at')->useCurrent();
         });
     }

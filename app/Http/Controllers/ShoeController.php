@@ -11,6 +11,7 @@ use Illuminate\View\View;
 use Webpatser\Uuid\Uuid;
 use Illuminate\Support\Carbon;
 use App\Shoe;
+use App\Brand;
 
 class ShoeController extends Controller
 {
@@ -21,25 +22,23 @@ class ShoeController extends Controller
      */
     public function index()
     {
-       // $shoes = DB::table('shoes')->get();
-       // return view('shoes.index')
-          //  ->with('shoes', $shoes);
+        $brand = Brand::all();
+        $shoes =  Shoe::all();
 
-        $shoes = Shoe::latest()->paginate(5);
-
-        return view('shoes.index',compact('shoes'))
-            ->with('i', (request()->input('page', 1) - 1) * 5);
+        return view('shoes.index')
+            ->with('shoe', $shoes)
+            ->with('brand', $brand);
     }
 
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|Factory|View
      */
     public function create()
     {
-        $size = DB::table('shoe_size')->get()->pluck('shoe_size',	'shoe_size_ID');
-        $brand = DB::table('shoe_brand')->get()->pluck('shoe_brand',	'shoe_brand_ID');
+        $size = DB::table('shoe_size')->get()->pluck('shoe_size',	'id');
+        $brand = DB::table('shoe_brand')->get()->pluck('brand_name',	'id');
         return view('shoes.create')
             ->with('brand', $brand)
             ->with('size', $size);
@@ -49,21 +48,21 @@ class ShoeController extends Controller
      * Store a newly created resource in storage.
      *
      * @param \Illuminate\Http\Request $request
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      * @throws Exception
      */
     public function store(Request $request)
     {
-        DB::table('shoes')->insert([
-            'shoes_ID' => Uuid::generate(),
-            'shoe_name' => $request->input('shoe_name'),
-            'shoe_brand_FK' => $request->input('shoe_brand'),
-            'shoe_size_FK' => $request->input('shoe_size'),
-            'shoe_description' => $request->input('shoe_description'),
-            'shoe_amount' => $request->input('shoe_amount'),
-            'created_at' => Carbon::now()->format( 'Y-m-d H:i:s' ),
-            'updated_at' => Carbon::now()->format( 'Y-m-d H:i:s' ),
-        ]);
+        $shoe = new Shoe;
+
+        $shoe->shoe_name = $request->input('shoe_name');
+        $shoe->shoe_brand_FK = $request->input('shoe_brand');
+        $shoe->shoe_size_FK = $request->input('shoe_size');
+        $shoe->shoe_description = $request->input('shoe_description');
+        $shoe->shoe_amount = $request->input('shoe_amount');
+
+        $shoe->save();
+
         return redirect()->route('shoes.index')
             ->with('success','Product created successfully.');
     }
@@ -74,9 +73,9 @@ class ShoeController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Shoe $shoe)
     {
-        //
+        return view('shoes.show',compact('shoe'));
     }
 
     /**

@@ -15,13 +15,15 @@ class CreateShoesTable extends Migration
     public function up()
     {
         Schema::create('shoes', function (Blueprint $table) {
-            $table->uuid('shoes_ID');
-            $table->primary('shoes_ID');
+            $table->id();
             $table->string('shoe_name');
-            $table->uuid('shoe_brand_FK')->nullable();
-            $table->foreign('shoe_brand_FK')->references('shoe_brand_ID')->on('shoe_brand');
-            $table->uuid('shoe_size_FK')->nullable();
-            $table->foreign('shoe_size_FK')->references('shoe_size_ID')->on('shoe_size');
+
+            $table->foreignId('shoe_brand_FK');
+            $table->foreign('shoe_brand_FK')->references('id')->on('brands');
+
+            $table->foreignId('shoe_size_FK');
+            $table->foreign('shoe_size_FK')->references('id')->on('sizes');
+
             $table->string('shoe_description');
             $table->string('shoe_amount');
             $table->dateTime('created_at');

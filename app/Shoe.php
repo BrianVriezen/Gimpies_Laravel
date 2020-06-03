@@ -8,14 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Shoe extends Model
 {
-    protected $primaryKey = 'shoes_ID'; // or null
+    protected $fillable = ['shoe_name', 'shoe_description', 'shoe_amount'];
 
-    public $incrementing = false;
-
-    // In Laravel 6.0+ make sure to also set $keyType
-    protected $keyType = 'uuid';
-
-    protected $fillable = [
-        'shoe_name', 'shoe_description'
-    ];
+    public function brand()
+    {
+        return $this->belongsTo(Brand::class, 'shoe_brand_FK', 'shoe_brand_ID');
+    }
 }

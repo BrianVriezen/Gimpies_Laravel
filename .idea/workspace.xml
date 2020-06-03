@@ -2,14 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="707d4bd4-b9d1-442c-bdc1-14b07b33a192" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Shoe.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/terminal.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Brand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/shoes/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/shoes/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ShoeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ShoeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Shoe.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Shoe.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_05_12_083815_create_shoe_size_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_05_12_083815_create_shoe_size_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_05_12_085628_create_shoe_brand_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_05_12_085628_create_brands_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2020_05_13_071909_create_shoes_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_05_13_071909_create_shoes_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/shoes/createShoe.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shoes/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_05_13_093818_create_sold_shoes_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_05_13_093818_create_sold_shoes_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_05_19_073018_create_cart_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_05_19_073018_create_cart_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/ShoeBrandSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/ShoeBrandSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/ShoeSizeSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/ShoeSizeSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/shoes/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shoes/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/shoes/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shoes/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,9 +31,7 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution>
-      <executable />
-    </execution>
+    <execution />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -144,8 +155,8 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
       <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
-      <path value="$PROJECT_DIR$/vendor/webpatser/laravel-uuid" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/vendor/webpatser/laravel-uuid" />
     </include_path>
   </component>
   <component name="ProjectId" id="1bncUol2nEpcdGaYFC3hFU3NTg6" />
@@ -154,16 +165,23 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql&#10;mariadb" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../laravel-6-crud-master" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Projects\Gimpies_Laravel\app" />
+      <recent name="C:\xampp\htdocs\Projects\Gimpies_Laravel\app\Http" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -193,14 +211,22 @@
       <workItem from="1590569103219" duration="3488000" />
       <workItem from="1590572813108" duration="564000" />
       <workItem from="1590736437025" duration="4557000" />
+      <workItem from="1591080190530" duration="3095000" />
+      <workItem from="1591085207108" duration="30000" />
+      <workItem from="1591085941410" duration="10916000" />
+      <workItem from="1591167895400" duration="5454000" />
+      <workItem from="1591183667315" duration="4235000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/Gimpies_Laravel" />
+    </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589362584925">
@@ -211,21 +237,28 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="276" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-1680.26.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1590572906392" />
-    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1590572357389">
+    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1591183719839">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="276" key="FileChooserDialogImpl/-1680.26.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1590572357389" />
+    <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1591183719839" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1589362486637">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="196" height="457" key="HiddenNamespacesPopup/-1680.26.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1589362486637" />
-    <state x="763" y="335" key="NewPhpClassDialog" timestamp="1590570458781">
+    <state x="763" y="335" key="NewPhpClassDialog" timestamp="1591089550156">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="763" y="335" key="NewPhpClassDialog/-1680.26.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1590570458781" />
-    <state x="794" y="444" key="NewPhpFileDialog" timestamp="1590569961492">
+    <state x="763" y="335" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591089550156" />
+    <state x="794" y="444" key="NewPhpFileDialog" timestamp="1591086829665">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="794" y="444" key="NewPhpFileDialog/-1680.26.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1590569961492" />
+    <state x="794" y="444" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591086829665" />
+    <state x="461" y="164" key="SettingsEditor" timestamp="1591085236065">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1591085236065" />
   </component>
 </project>

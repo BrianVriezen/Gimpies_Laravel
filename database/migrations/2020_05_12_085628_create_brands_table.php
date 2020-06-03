@@ -5,7 +5,7 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 use Webpatser\Uuid\Uuid;
 
-class CreateShoeBrandTable extends Migration
+class CreateBrandsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -14,10 +14,9 @@ class CreateShoeBrandTable extends Migration
      */
     public function up()
     {
-        Schema::create('shoe_brand', function (Blueprint $table) {
-            $table->uuid('shoe_brand_ID');
-            $table->primary('shoe_brand_ID');
-            $table->string('shoe_brand');
+        Schema::create('brands', function (Blueprint $table) {
+            $table->id();
+            $table->string('brand_name');
         });
     }
 
@@ -28,6 +27,6 @@ class CreateShoeBrandTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('shoe_brand');
+        Schema::dropIfExists('brands');
     }
 }

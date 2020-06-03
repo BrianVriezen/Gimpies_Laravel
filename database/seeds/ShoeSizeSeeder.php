@@ -17,50 +17,39 @@ class ShoeSizeSeeder extends Seeder
     public function run()
     {
         DB::statement('SET FOREIGN_KEY_CHECKS=0');
-        DB::table( 'shoe_size' )->truncate();
-        DB::table( 'shoe_size' )->insert( [
+        DB::table( 'sizes' )->truncate();
+        DB::table( 'sizes' )->insert( [
             [
-                "shoe_size_ID"          => Uuid::generate(),
                 "shoe_size"        => "36"
             ],
             [
-                "shoe_size_ID"          => Uuid::generate(),
                 "shoe_size"        => "37"
             ],
             [
-                "shoe_size_ID"          => Uuid::generate(),
                 "shoe_size"        => "38"
             ],
             [
-                "shoe_size_ID"          => Uuid::generate(),
                 "shoe_size"        => "39"
             ],
             [
-                "shoe_size_ID"          => Uuid::generate(),
                 "shoe_size"        => "40"
             ],
             [
-                "shoe_size_ID"          => Uuid::generate(),
                 "shoe_size"        => "41"
             ],
             [
-                "shoe_size_ID"          => Uuid::generate(),
                 "shoe_size"        => "42"
             ],
             [
-                "shoe_size_ID"          => Uuid::generate(),
                 "shoe_size"        => "43"
             ],
             [
-                "shoe_size_ID"          => Uuid::generate(),
                 "shoe_size"        => "44"
             ],
             [
-                "shoe_size_ID"          => Uuid::generate(),
                 "shoe_size"        => "45"
             ],
             [
-                "shoe_size_ID"          => Uuid::generate(),
                 "shoe_size"        => "46"
             ]
         ] );

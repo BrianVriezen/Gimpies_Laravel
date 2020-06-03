@@ -171,14 +171,9 @@
     </nav>
 </header>
 
-<main role="main">
-    <div class="container mt-1">
-        <div class="row">
-            <!-- Content -->
-            @yield('content')
-        </div>
-    </div>
-</main>
+<div class="container">
+    @yield('content')
+</div>
 
 <!-- FOOTER -->
 <footer class="container">

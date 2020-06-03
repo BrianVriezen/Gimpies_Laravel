@@ -5,7 +5,7 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 use Webpatser\Uuid\Uuid;
 
-class CreateShoeSizeTable extends Migration
+class CreateSizesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -14,9 +14,8 @@ class CreateShoeSizeTable extends Migration
      */
     public function up()
     {
-        Schema::create('shoe_size', function (Blueprint $table) {
-            $table->uuid('shoe_size_ID');
-            $table->primary('shoe_size_ID');
+        Schema::create('sizes', function (Blueprint $table) {
+            $table->id();
             $table->string('shoe_size');
         });
     }
@@ -28,6 +27,6 @@ class CreateShoeSizeTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('shoe_size');
+        Schema::dropIfExists('sizes');
     }
 }
