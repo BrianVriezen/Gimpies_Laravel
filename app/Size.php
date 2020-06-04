@@ -1,14 +1,13 @@
 <?php
 
-
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Brand extends Model
+class Size extends Model
 {
     public function shoes()
     {
-        return $this->hasMany(Shoe::class, 'brand_id');
+        return $this->hasMany(Shoe::class, 'size_id');
     }
 }

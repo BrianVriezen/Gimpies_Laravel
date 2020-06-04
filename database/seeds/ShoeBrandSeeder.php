@@ -15,22 +15,22 @@ class ShoeBrandSeeder extends Seeder
         DB::table( 'brands' )->truncate();
         DB::table( 'brands' )->insert( [
             [
-                "brand_name"        => "Kenneth Cole"
+                "name"        => "Kenneth Cole"
             ],
             [
-                "brand_name"        => "Nike"
+                "name"        => "Nike"
             ],
             [
-                "brand_name"        => "Adidas"
+                "name"        => "Adidas"
             ],
             [
-                "brand_name"        => "Reebok"
+                "name"        => "Reebok"
             ],
             [
-                "brand_name"        => "FILA"
+                "name"        => "FILA"
             ],
             [
-                "brand_name"        => "Timberland"
+                "name"        => "Timberland"
             ]
         ] );
     }

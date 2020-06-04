@@ -20,37 +20,37 @@ class ShoeSizeSeeder extends Seeder
         DB::table( 'sizes' )->truncate();
         DB::table( 'sizes' )->insert( [
             [
-                "shoe_size"        => "36"
+                "size"        => "36"
             ],
             [
-                "shoe_size"        => "37"
+                "size"        => "37"
             ],
             [
-                "shoe_size"        => "38"
+                "size"        => "38"
             ],
             [
-                "shoe_size"        => "39"
+                "size"        => "39"
             ],
             [
-                "shoe_size"        => "40"
+                "size"        => "40"
             ],
             [
-                "shoe_size"        => "41"
+                "size"        => "41"
             ],
             [
-                "shoe_size"        => "42"
+                "size"        => "42"
             ],
             [
-                "shoe_size"        => "43"
+                "size"        => "43"
             ],
             [
-                "shoe_size"        => "44"
+                "ssize"        => "44"
             ],
             [
-                "shoe_size"        => "45"
+                "size"        => "45"
             ],
             [
-                "shoe_size"        => "46"
+                "size"        => "46"
             ]
         ] );
     }

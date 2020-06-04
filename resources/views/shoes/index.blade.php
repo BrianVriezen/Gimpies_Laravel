@@ -7,7 +7,7 @@
                 <h2>Schoenen</h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-success" href="{{ route('shoes.create') }}"> Create new blogs</a>
+                <a class="btn btn-success" href="{{ route('shoes.create') }}"> Nieuwe schoen toevoegen</a>
             </div>
         </div>
     </div>
@@ -25,11 +25,11 @@
             <th>Description</th>
             <th width="250px">Action</th>
         </tr>
-        @foreach ($brands->shoes as $shoe)
+        @foreach ($shoes as $shoe)
             <tr>
-                <td>{{ $shoe->shoe_name }}</td>
-                <td>{{ $brands->brand_name }}</td>
-                <td>{{ $shoe->shoe_description }}</td>
+                <td>{{ $shoe->name }}</td>
+                <td>{{ $shoe->brand->name }}</td>
+                <td>{{ $shoe->description }}</td>
                 <td>
                     <form action="{{ route('shoes.destroy',$shoe->id) }}" method="POST">
 

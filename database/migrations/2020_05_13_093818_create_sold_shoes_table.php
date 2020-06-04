@@ -16,14 +16,14 @@ class CreateSoldShoesTable extends Migration
     {
         Schema::create('sold_shoes', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('shoes_ID_FK');
-            $table->foreign('shoes_ID_FK')->references('id')->on('shoes');
+            $table->foreignId('shoe_id');
+            $table->foreign('shoe_id')->references('id')->on('shoes');
 
-            $table->foreignId('user_ID_FK');
-            $table->foreign('user_ID_FK')->references('id')->on('users');
+            $table->foreignId('user_id');
+            $table->foreign('user_id')->references('id')->on('users');
 
-            $table->string('shoe_amount');
-            $table->dateTime('shoe_sold_at');
+            $table->string('amount');
+            $table->dateTime('sold_at');
         });
     }
 

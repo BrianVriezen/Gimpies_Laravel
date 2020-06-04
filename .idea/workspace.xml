@@ -2,10 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="707d4bd4-b9d1-442c-bdc1-14b07b33a192" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Size.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/debugbar/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Gimpies.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Gimpies.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Brand.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Brand.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ShoeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ShoeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Shoe.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Shoe.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_05_12_083815_create_sizes_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_05_12_083815_create_sizes_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_05_12_085628_create_brands_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_05_12_085628_create_brands_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_05_13_071909_create_shoes_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_05_13_071909_create_shoes_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_05_13_093818_create_sold_shoes_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_05_13_093818_create_sold_shoes_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_05_19_073018_create_cart_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_05_19_073018_create_cart_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/ShoeBrandSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/ShoeBrandSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/ShoeSizeSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/ShoeSizeSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/shoes/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shoes/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -16,30 +31,6 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
-  </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MariaDB - gimpies@localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MariaDB - gimpies@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-    </expand>
-    <select />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -141,6 +132,10 @@
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
       <path value="$PROJECT_DIR$/vendor/webpatser/laravel-uuid" />
+      <path value="$PROJECT_DIR$/vendor/maximebf/debugbar" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
     </include_path>
   </component>
   <component name="ProjectId" id="1bncUol2nEpcdGaYFC3hFU3NTg6" />
@@ -199,7 +194,9 @@
       <workItem from="1591085207108" duration="30000" />
       <workItem from="1591085941410" duration="10916000" />
       <workItem from="1591167895400" duration="5454000" />
-      <workItem from="1591183667315" duration="6418000" />
+      <workItem from="1591183667315" duration="7014000" />
+      <workItem from="1591264568154" duration="3001000" />
+      <workItem from="1591283575524" duration="3418000" />
     </task>
     <servers />
   </component>
@@ -213,10 +210,11 @@
     </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589362584925">
+    <state x="552" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591283940982">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1680.26.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1589362584925" />
+    <state x="552" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591283940982" />
     <state x="690" y="276" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1590572906392">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

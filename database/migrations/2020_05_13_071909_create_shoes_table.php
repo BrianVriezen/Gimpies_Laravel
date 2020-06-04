@@ -3,7 +3,6 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-use Webpatser\Uuid\Uuid;
 
 class CreateShoesTable extends Migration
 {
@@ -16,16 +15,16 @@ class CreateShoesTable extends Migration
     {
         Schema::create('shoes', function (Blueprint $table) {
             $table->id();
-            $table->string('shoe_name');
+            $table->string('name');
 
-            $table->foreignId('shoe_brand_FK');
-            $table->foreign('shoe_brand_FK')->references('id')->on('brands');
+            $table->foreignId('brand_id');
+            $table->foreign('brand_id')->references('id')->on('brands');
 
-            $table->foreignId('shoe_size_FK');
-            $table->foreign('shoe_size_FK')->references('id')->on('sizes');
+            $table->foreignId('size_id');
+            $table->foreign('size_id')->references('id')->on('sizes');
 
-            $table->string('shoe_description');
-            $table->string('shoe_amount');
+            $table->string('description');
+            $table->string('amount');
             $table->dateTime('created_at');
             $table->dateTime('updated_at');
         });
