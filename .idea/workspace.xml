@@ -1,28 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="707d4bd4-b9d1-442c-bdc1-14b07b33a192" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Size.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/debugbar/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Gimpies.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Gimpies.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Brand.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Brand.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ShoeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ShoeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Shoe.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Shoe.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_05_12_083815_create_sizes_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_05_12_083815_create_sizes_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_05_12_085628_create_brands_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_05_12_085628_create_brands_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_05_13_071909_create_shoes_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_05_13_071909_create_shoes_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_05_13_093818_create_sold_shoes_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_05_13_093818_create_sold_shoes_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_05_19_073018_create_cart_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_05_19_073018_create_cart_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/ShoeBrandSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/ShoeBrandSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/ShoeSizeSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/ShoeSizeSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/shoes/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shoes/index.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="707d4bd4-b9d1-442c-bdc1-14b07b33a192" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -196,7 +175,7 @@
       <workItem from="1591167895400" duration="5454000" />
       <workItem from="1591183667315" duration="7014000" />
       <workItem from="1591264568154" duration="3001000" />
-      <workItem from="1591283575524" duration="3418000" />
+      <workItem from="1591283575524" duration="3740000" />
     </task>
     <servers />
   </component>
