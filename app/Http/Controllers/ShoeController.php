@@ -35,7 +35,6 @@ class ShoeController extends Controller
     public function create()
     {
         $size = DB::table('sizes')->get()->pluck('size', 'id');
-        //$brand = DB::table('brands')->get()->pluck('name', 'id');
         $brand = Brand::all('name', 'id');
         return view('shoes.create')
             ->with('brand', $brand)
