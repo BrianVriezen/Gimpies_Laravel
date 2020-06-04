@@ -24,7 +24,7 @@
                                 <div class="col-md-6">
                                     <select name="shoe_brand" class="form-control"required>
                                         @foreach($brand as $id => $display)
-                                            <option value="{{ $id }}">{{ $display }}</option>
+                                            <option value="{{ $id }}">{{ $display->name }}</option>
                                         @endforeach
                                     </select>
                                 </div>
