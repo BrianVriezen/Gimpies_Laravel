@@ -10,7 +10,6 @@ use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 use Illuminate\View\View;
 
 class ShoeController extends Controller
@@ -22,7 +21,7 @@ class ShoeController extends Controller
      */
     public function index()
     {
-        $shoes = Shoe::with('brand')->get();
+        $shoes = Shoe::with('brand', 'size')->get();
 
         return view('shoes.index')
             ->with('shoes', $shoes);
@@ -35,7 +34,6 @@ class ShoeController extends Controller
      */
     public function create()
     {
-        //$size = DB::table('sizes')->get()->pluck('size', 'id');
         $size = Size::all('size', 'id');
         $brand = Brand::all('name', 'id');
         return view('shoes.create')
@@ -56,7 +54,7 @@ class ShoeController extends Controller
 
         $shoe->name = $request->input('shoe_name');
         $shoe->brand()->associate($request->input('shoe_brand'));
-        $shoe->size_id = $request->input('shoe_size');
+        $shoe->size()->associate($request->input('shoe_size'));
         $shoe->description = $request->input('shoe_description');
         $shoe->amount = $request->input('shoe_amount');
 
@@ -69,8 +67,8 @@ class ShoeController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param int $id
-     * @return \Illuminate\Http\Response
+     * @param Shoe $shoe
+     * @return Application|Factory|View
      */
     public function show(Shoe $shoe)
     {
@@ -80,24 +78,43 @@ class ShoeController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param int $id
-     * @return \Illuminate\Http\Response
+     * @param Shoe $shoe
+     * @return Application|Factory|View
      */
-    public function edit($id)
+    public function edit(Shoe $shoe)
     {
-        //
+        $size = Size::all('size', 'id');
+        $brand = Brand::all('name', 'id');
+
+        return view('shoes.edit',compact('shoe'))
+            ->with('brands', $brand)
+            ->with('sizes', $size);
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param Request $request
-     * @param int $id
-     * @return \Illuminate\Http\Response
+     * @param Shoe $shoe
+     * @return RedirectResponse
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Shoe $shoe)
     {
-        //
+        $validated = $request->validate([
+            'name' => 'required',
+            'brand' => 'required',
+            'size' => 'required',
+            'amount' => 'required',
+            'description' => 'required',
+        ]);
+
+        $shoe->brand()->associate($request->input('brand'));
+        $shoe->size()->associate($request->input('size'));
+
+        $shoe->update($validated);
+
+        return redirect()->route('shoes.index')
+            ->with('success','Product updated successfully');
     }
 
     /**

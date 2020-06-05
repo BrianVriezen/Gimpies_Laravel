@@ -23,8 +23,8 @@
                                 <label for="shoe_brand" class="col-md-4 col-form-label text-md-right">{{ __('Merk') }}</label>
                                 <div class="col-md-6">
                                     <select name="shoe_brand" class="form-control"required>
-                                        @foreach($brand as $id => $display)
-                                            <option value="{{ $id }}">{{ $display->name }}</option>
+                                        @foreach($brand as $brand)
+                                            <option value="{{ $brand->id }}">{{ $brand->name }}</option>
                                         @endforeach
                                     </select>
                                 </div>
@@ -34,8 +34,8 @@
                                 <label for="shoe_size" class="col-md-4 col-form-label text-md-right">{{ __('Maat') }}</label>
                                 <div class="col-md-6">
                                     <select name="shoe_size" class="form-control"required>
-                                        @foreach($size as $id => $display)
-                                            <option value="{{ $id }}">{{ $display->size }}</option>
+                                        @foreach($size as $size)
+                                            <option value="{{ $size->id }}">{{ $size->size }}</option>
                                         @endforeach
                                     </select>
                                 </div>

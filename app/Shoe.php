@@ -12,7 +12,7 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Shoe extends Model
 {
-    protected $fillable = ['shoe_name', 'shoe_description', 'shoe_amount'];
+    protected $fillable = ['name', 'description', 'amount'];
 
     public function brand()
     {

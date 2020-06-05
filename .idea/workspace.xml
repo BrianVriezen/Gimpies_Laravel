@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="707d4bd4-b9d1-442c-bdc1-14b07b33a192" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/480d19ea-407b-4b13-9058-32050708371b.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/480d19ea-407b-4b13-9058-32050708371b/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/de123d3d-83bc-4c12-a23d-5743a583e791.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/de123d3d-83bc-4c12-a23d-5743a583e791/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ShoeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ShoeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Shoe.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Shoe.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/shoes/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shoes/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/shoes/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shoes/edit.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +182,7 @@
       <workItem from="1591183667315" duration="7014000" />
       <workItem from="1591264568154" duration="3001000" />
       <workItem from="1591283575524" duration="4522000" />
-      <workItem from="1591343003326" duration="1070000" />
+      <workItem from="1591343003326" duration="11913000" />
     </task>
     <servers />
   </component>
@@ -206,11 +205,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="276" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-1680.26.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1590572906392" />
-    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1591183719839">
+    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1591345497830">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="276" key="FileChooserDialogImpl/-1680.26.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1590572357389" />
-    <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1591183719839" />
+    <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1591345497830" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1589362486637">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -220,11 +219,11 @@
     </state>
     <state x="763" y="335" key="NewPhpClassDialog/-1680.26.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1590570458781" />
     <state x="763" y="335" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591089550156" />
-    <state x="794" y="444" key="NewPhpFileDialog" timestamp="1591086829665">
+    <state x="794" y="444" key="NewPhpFileDialog" timestamp="1591345533179">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="794" y="444" key="NewPhpFileDialog/-1680.26.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1590569961492" />
-    <state x="794" y="444" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591086829665" />
+    <state x="794" y="444" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591345533179" />
     <state x="461" y="164" key="SettingsEditor" timestamp="1591085236065">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
