@@ -35,7 +35,7 @@
                                 <div class="col-md-6">
                                     <select name="shoe_size" class="form-control"required>
                                         @foreach($size as $id => $display)
-                                            <option value="{{ $id }}">{{ $display }}</option>
+                                            <option value="{{ $id }}">{{ $display->size }}</option>
                                         @endforeach
                                     </select>
                                 </div>

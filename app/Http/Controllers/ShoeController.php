@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Brand;
 use App\Shoe;
+use App\Size;
 use Exception;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
@@ -34,7 +35,8 @@ class ShoeController extends Controller
      */
     public function create()
     {
-        $size = DB::table('sizes')->get()->pluck('size', 'id');
+        //$size = DB::table('sizes')->get()->pluck('size', 'id');
+        $size = Size::all('size', 'id');
         $brand = Brand::all('name', 'id');
         return view('shoes.create')
             ->with('brand', $brand)

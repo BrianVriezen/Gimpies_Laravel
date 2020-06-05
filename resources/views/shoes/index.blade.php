@@ -22,6 +22,7 @@
         <tr>
             <th>Naam</th>
             <th>Merk</th>
+            <th>maat</th>
             <th>Description</th>
             <th width="250px">Action</th>
         </tr>
@@ -29,6 +30,7 @@
             <tr>
                 <td>{{ $shoe->name }}</td>
                 <td>{{ $shoe->brand->name }}</td>
+                <td>{{ $shoe->size->size }}</td>
                 <td>{{ $shoe->description }}</td>
                 <td>
                     <form action="{{ route('shoes.destroy',$shoe->id) }}" method="POST">

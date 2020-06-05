@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="707d4bd4-b9d1-442c-bdc1-14b07b33a192" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/480d19ea-407b-4b13-9058-32050708371b.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/480d19ea-407b-4b13-9058-32050708371b/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/de123d3d-83bc-4c12-a23d-5743a583e791.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/de123d3d-83bc-4c12-a23d-5743a583e791/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ShoeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ShoeController.php" afterDir="false" />
     </list>
@@ -178,7 +182,8 @@
       <workItem from="1591167895400" duration="5454000" />
       <workItem from="1591183667315" duration="7014000" />
       <workItem from="1591264568154" duration="3001000" />
-      <workItem from="1591283575524" duration="4499000" />
+      <workItem from="1591283575524" duration="4522000" />
+      <workItem from="1591343003326" duration="1070000" />
     </task>
     <servers />
   </component>
