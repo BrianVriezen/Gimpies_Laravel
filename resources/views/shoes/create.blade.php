@@ -45,7 +45,7 @@
                                 <label for="shoe_amount" class="col-md-4 col-form-label text-md-right">{{ __('Hoeveelheid') }}</label>
 
                                 <div class="col-md-6">
-                                    <input name="shoe_amount" class="form-control" type="number" value="1" min="1" required>
+                                    <input name="shoe_amount" class="form-control" type="number" value="1" min="1" max="100" required>
                                 </div>
                             </div>
 
@@ -53,7 +53,7 @@
                                 <label for="shoe_description" class="col-md-4 col-form-label text-md-right">{{ __('Beschrijving') }}</label>
 
                                 <div class="col-md-6">
-                                    <textarea name="shoe_description" class="form-control" required></textarea>
+                                    <textarea name="shoe_description" class="form-control" maxlength="255" required></textarea>
                                 </div>
                             </div>
 

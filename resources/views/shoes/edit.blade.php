@@ -57,13 +57,13 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Hoeveelheid:</strong>
-                        <input name="amount" class="form-control" type="number" value="1" min="1" required>
+                        <input name="amount" class="form-control" type="number" value="1" min="1" max="100" required>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Description:</strong>
-                    <textarea class="form-control" style="height:150px" name="description" placeholder="description">{{ $shoe->description }}</textarea>
+                    <textarea class="form-control" style="height:150px" name="description" placeholder="description" maxlength="255" >{{ $shoe->description }}</textarea>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">
