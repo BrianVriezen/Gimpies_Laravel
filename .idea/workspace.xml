@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="707d4bd4-b9d1-442c-bdc1-14b07b33a192" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/shoes/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shoes/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/shoes/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shoes/edit.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +180,7 @@
       <workItem from="1591283575524" duration="4522000" />
       <workItem from="1591343003326" duration="11913000" />
       <workItem from="1591654207169" duration="1355000" />
-      <workItem from="1591686319513" duration="1457000" />
+      <workItem from="1591686319513" duration="12646000" />
     </task>
     <servers />
   </component>
@@ -206,10 +203,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="276" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-1680.26.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1590572906392" />
-    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1591345497830">
+    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1591688628485">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="276" key="FileChooserDialogImpl/-1680.26.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1590572357389" />
+    <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040/-1680.21.1680.1010@0.0.1920.1040" timestamp="1591688628485" />
     <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1591345497830" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1589362486637">
       <screen x="0" y="0" width="1920" height="1040" />
